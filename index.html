@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>פרויקט ניתוח מכירות - טכנו סטור</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+            direction: rtl;
+        }
+        
+        .header {
+            background: white;
+            padding: 30px;
+            text-align: center;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .header h1 {
+            color: #2c3e50;
+            margin: 0;
+            font-size: 2.2rem;
+        }
+        
+        .header p {
+            color: #7f8c8d;
+            font-size: 1.1rem;
+            margin: 10px 0 0 0;
+        }
+        
+        .dashboard-section {
+            background: white;
+            margin: 30px 0;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .dashboard-header {
+            background: #3498db;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .dashboard-header h2 {
+            margin: 0;
+            font-size: 1.5rem;
+        }
+        
+        .dashboard-header p {
+            margin: 5px 0 0 0;
+            opacity: 0.9;
+        }
+        
+        .dashboard-embed {
+            width: 100%;
+            height: 600px;
+            border: none;
+        }
+        
+        .project-info {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            margin: 30px 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+        
+        .stat-box {
+            background: #ecf0f1;
+            padding: 20px;
+            text-align: center;
+            border-radius: 8px;
+        }
+        
+        .stat-number {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #2c3e50;
+            display: block;
+        }
+        
+        .stat-label {
+            color: #7f8c8d;
+            font-size: 0.9rem;
+        }
+        
+        .footer {
+            text-align: center;
+            color: #7f8c8d;
+            margin-top: 40px;
+            padding: 20px;
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            
+            .header h1 {
+                font-size: 1.8rem;
+            }
+            
+            .dashboard-embed {
+                height: 500px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🏪 פרויקט ניתוח מכירות</h1>
+        <p>מערכת דשבורדים אינטראקטיביים לחברת "טכנו סטור"</p>
+    </div>
+
+    <div class="project-info">
+        <h2>📊 אודות הפרויקט</h2>
+        <p>עבודה מסכמת בוויזואליזציה של מידע הכוללת ניתוח מעמיק של נתוני מכירות חברת "טכנו סטור". 
+        הפרויקט מבוסס על 500 רשומות מכירה ומציג שלושה דשבורדים מקצועיים לרמות ניהול שונות.</p>
+        
+        <div class="stats">
+            <div class="stat-box">
+                <span class="stat-number">500</span>
+                <div class="stat-label">רשומות מכירה</div>
+            </div>
+            <div class="stat-box">
+                <span class="stat-number">10</span>
+                <div class="stat-label">סניפים</div>
+            </div>
+            <div class="stat-box">
+                <span class="stat-number">5</span>
+                <div class="stat-label">קטגוריות מוצרים</div>
+            </div>
+            <div class="stat-box">
+                <span class="stat-number">3</span>
+                <div class="stat-label">דשבורדים</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="dashboard-section">
+        <div class="dashboard-header">
+            <h2>🎯 דשבורד תפעולי</h2>
+            <p>מעקב יומיומי אחר ביצועי מכירות ומוכרים</p>
+        </div>
+        <iframe class="dashboard-embed" 
+                src="https://public.tableau.com/views/israel_tech_store_analysis/sheet4?:embed=yes&:display_count=yes&:showVizHome=no"
+                title="דשבורד תפעולי">
+        </iframe>
+    </div>
+
+    <div class="dashboard-section">
+        <div class="dashboard-header">
+            <h2>📈 דשבורד ניהולי</h2>
+            <p>ניתוח מגמות והשוואות אסטרטגיות</p>
+        </div>
+        <iframe class="dashboard-embed" 
+                src="https://public.tableau.com/views/israel_tech_store_analysis/sheet9?:embed=yes&:display_count=yes&:showVizHome=no"
+                title="דשבורד ניהולי">
+        </iframe>
+    </div>
+
+    <div class="dashboard-section">
+        <div class="dashboard-header">
+            <h2>🎖️ דשבורד אסטרטגי</h2>
+            <p>מדדי ביצוע עיקריים ותחזיות</p>
+        </div>
+        <iframe class="dashboard-embed" 
+                src="https://public.tableau.com/views/israel_tech_store_analysis/sheet16?:embed=yes&:display_count=yes&:showVizHome=no"
+                title="דשבורד אסטרטגי">
+        </iframe>
+    </div>
+
+
+
+    <div class="footer">
+        <p>📚 עבודה מסכמת בוויזואליזציה של מידע | 🎓 קיץ 2025</p>
+        <p>🔗 <a href="https://public.tableau.com/app/profile/allw.wakie" target="_blank">צפה בפרופיל Tableau Public המלא</a></p>
+    </div>
+</body>
+</html>
